@@ -11,7 +11,7 @@
 
   <target name="dist">
     <mkdir dir="dist" />
-    <jar destFile="dist/groovy-ant.jar">
+    <jar destFile="dist/groovy-pct.jar">
       <zipfileset src="groovy/groovy-2.4.15/embeddable/groovy-all-2.4.15-indy.jar" />
       <zipfileset src="ant/apache-ant-1.9.15/lib/ant.jar" />
       <zipfileset src="ant/apache-ant-1.9.15/lib/ant-launcher.jar" />
