@@ -4,17 +4,17 @@
   <target name="init">
     <get dest="groovy.zip" src="https://dl.bintray.com/groovy/maven/apache-groovy-binary-2.4.15.zip" />
     <unzip dest="groovy" src="groovy.zip" />
-    <get dest="PCT.jar" src="https://github.com/Riverside-Software/pct/releases/download/v209/PCT.jar" />
-    <get dest="ant.zip" src="http://mirror.ibcp.fr/pub/apache/ant/binaries/apache-ant-1.9.11-bin.zip" />
+    <get dest="PCT.jar" src="https://github.com/Riverside-Software/pct/releases/download/V215/PCT.jar" />
+    <get dest="ant.zip" src="http://mirror.ibcp.fr/pub/apache/ant/binaries/apache-ant-1.9.15-bin.zip" />
     <unzip dest="ant" src="ant.zip" />
   </target>
 
   <target name="dist">
     <mkdir dir="dist" />
-    <jar destFile="dist/groovy-ant.jar">
+    <jar destFile="dist/groovy-pct.jar">
       <zipfileset src="groovy/groovy-2.4.15/embeddable/groovy-all-2.4.15-indy.jar" />
-      <zipfileset src="ant/apache-ant-1.9.11/lib/ant.jar" />
-      <zipfileset src="ant/apache-ant-1.9.11/lib/ant-launcher.jar" />
+      <zipfileset src="ant/apache-ant-1.9.15/lib/ant.jar" />
+      <zipfileset src="ant/apache-ant-1.9.15/lib/ant-launcher.jar" />
       <zipfileset src="PCT.jar" />
       <manifest>
         <attribute name="Main-Class" value="groovy.ui.GroovyMain" />
