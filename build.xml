@@ -2,21 +2,19 @@
 <project name="groovy-ant-pct" default="dist">
 
   <target name="init">
-    <get dest="groovy.zip" src="https://dl.bintray.com/groovy/maven/apache-groovy-binary-2.4.15.zip" />
+    <get dest="groovy.zip" src="https://groovy.jfrog.io/artifactory/dist-release-local/groovy-zips/apache-groovy-binary-3.0.8.zip" />
     <unzip dest="groovy" src="groovy.zip" />
-    <get dest="PCT.jar" src="https://github.com/Riverside-Software/pct/releases/download/V215/PCT.jar" />
-    <get dest="ant.zip" src="http://mirror.ibcp.fr/pub/apache/ant/binaries/apache-ant-1.10.9-bin.zip" />
-    <unzip dest="ant" src="ant.zip" />
-    <get dest="commons-cli.zip" src="http://apache.mirrors.ovh.net/ftp.apache.org/dist//commons/cli/binaries/commons-cli-1.4-bin.zip" />
+    <get dest="PCT.jar" src="https://github.com/Riverside-Software/pct/releases/download/V218/PCT.jar" />
+    <get dest="commons-cli.zip" src="http://apache.mirrors.ovh.net/ftp.apache.org/dist/commons/cli/binaries/commons-cli-1.4-bin.zip" />
     <unzip dest="commons-cli" src="commons-cli.zip" />
   </target>
 
   <target name="dist">
     <mkdir dir="dist" />
     <jar destFile="dist/groovy-pct.jar">
-      <zipfileset src="groovy/groovy-2.4.15/embeddable/groovy-all-2.4.15-indy.jar" />
-      <zipfileset src="ant/apache-ant-1.10.9/lib/ant.jar" />
-      <zipfileset src="ant/apache-ant-1.10.9/lib/ant-launcher.jar" />
+      <zipfileset src="groovy/groovy-3.0.8/lib/groovy-3.0.8.jar" />
+      <zipfileset src="groovy/groovy-3.0.8/lib/ant-1.10.9.jar" />
+      <zipfileset src="groovy/groovy-3.0.8/lib/ant-launcher-1.10.9.jar" />
       <zipfileset src="commons-cli/commons-cli-1.4/commons-cli-1.4.jar" />
       <zipfileset src="PCT.jar" />
       <manifest>
