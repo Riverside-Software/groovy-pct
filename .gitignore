@@ -1,8 +1,1 @@
-PCT.jar
-ant.zip
-ant/
-groovy.zip
-groovy/
-commons-cli.zip
-commons-cli
-dist/
+target/
