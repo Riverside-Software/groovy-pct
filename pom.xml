@@ -4,7 +4,7 @@
 
   <groupId>eu.rssw.pct</groupId>
   <artifactId>groovy-pct</artifactId>
-  <version>223.1</version>
+  <version>224</version>
   <name>Standalone PCT / Groovy launcher</name>
   <description>Standalone PCT / Groovy launcher</description>
   <url>https://github.com/Riverside-Software/groovy-pct</url>
@@ -33,25 +33,25 @@
     <dependency>
       <groupId>org.apache.groovy</groupId>
       <artifactId>groovy</artifactId>
-      <version>4.0.6</version>
+      <version>4.0.7</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.groovy</groupId>
       <artifactId>groovy-cli-picocli</artifactId>
-      <version>4.0.6</version>
+      <version>4.0.7</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.groovy</groupId>
       <artifactId>groovy-ant</artifactId>
-      <version>4.0.6</version>
+      <version>4.0.7</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.groovy</groupId>
       <artifactId>groovy-json</artifactId>
-      <version>4.0.6</version>
+      <version>4.0.7</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -75,7 +75,7 @@
     <dependency>
       <groupId>eu.rssw.pct</groupId>
       <artifactId>pct</artifactId>
-      <version>223</version>
+      <version>224</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
@@ -85,7 +85,7 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
-        <version>2.7.5</version>
+        <version>2.7.7</version>
         <configuration>
           <mainClass>groovy.ui.GroovyMain</mainClass>
         </configuration>
