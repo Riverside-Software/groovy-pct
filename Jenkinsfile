@@ -11,7 +11,6 @@ pipeline {
   }
 
   stages {
-
     stage('Maven Central') {
       agent { label 'Linux-Office' }
       steps {
