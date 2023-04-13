@@ -4,7 +4,7 @@
 
   <groupId>eu.rssw.pct</groupId>
   <artifactId>groovy-pct</artifactId>
-  <version>226</version>
+  <version>226.1</version>
   <name>Standalone PCT / Groovy launcher</name>
   <description>Standalone PCT / Groovy launcher</description>
   <url>https://github.com/Riverside-Software/groovy-pct</url>
@@ -76,6 +76,12 @@
       <groupId>commons-cli</groupId>
       <artifactId>commons-cli</artifactId>
       <version>1.5.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>info.picocli</groupId>
+      <artifactId>picocli-groovy</artifactId>
+      <version>4.7.2</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
