@@ -4,7 +4,7 @@
 
   <groupId>eu.rssw.pct</groupId>
   <artifactId>groovy-pct</artifactId>
-  <version>226.1</version>
+  <version>226.2</version>
   <name>Standalone PCT / Groovy launcher</name>
   <description>Standalone PCT / Groovy launcher</description>
   <url>https://github.com/Riverside-Software/groovy-pct</url>
@@ -88,6 +88,12 @@
       <groupId>eu.rssw.pct</groupId>
       <artifactId>pct</artifactId>
       <version>226</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.progress.openedge</groupId>
+      <artifactId>openedge</artifactId>
+      <version>12.2.11</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
