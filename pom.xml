@@ -4,7 +4,7 @@
 
   <groupId>eu.rssw.pct</groupId>
   <artifactId>groovy-pct</artifactId>
-  <version>227</version>
+  <version>228</version>
   <name>Standalone PCT / Groovy launcher</name>
   <description>Standalone PCT / Groovy launcher</description>
   <url>https://github.com/Riverside-Software/groovy-pct</url>
@@ -87,7 +87,7 @@
     <dependency>
       <groupId>eu.rssw.pct</groupId>
       <artifactId>pct</artifactId>
-      <version>227</version>
+      <version>228</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
