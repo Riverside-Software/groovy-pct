@@ -12,11 +12,11 @@ pipeline {
 
   stages {
     stage('Maven Central') {
-      agent { label 'Linux-Office' }
+      agent { label 'Linux-Office03' }
       steps {
         checkout([$class: 'GitSCM', branches: scm.branches, extensions: scm.extensions + [[$class: 'CleanCheckout']], userRemoteConfigs: scm.userRemoteConfigs])
         script {
-          def jdk = tool name: 'Corretto 11', type: 'jdk'
+          def jdk = tool name: 'JDK17', type: 'jdk'
           def mvn = tool name: 'Maven 3', type: 'maven'
 
           withEnv(["JAVA_HOME=${jdk}"]) {
