@@ -4,7 +4,7 @@
 
   <groupId>eu.rssw.pct</groupId>
   <artifactId>groovy-pct</artifactId>
-  <version>228.1</version>
+  <version>229</version>
   <name>Standalone PCT / Groovy launcher</name>
   <description>Standalone PCT / Groovy launcher</description>
   <url>https://github.com/Riverside-Software/groovy-pct</url>
@@ -33,25 +33,25 @@
     <dependency>
       <groupId>org.apache.groovy</groupId>
       <artifactId>groovy</artifactId>
-      <version>4.0.19</version>
+      <version>4.0.24</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.groovy</groupId>
       <artifactId>groovy-cli-picocli</artifactId>
-      <version>4.0.19</version>
+      <version>4.0.24</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.groovy</groupId>
       <artifactId>groovy-ant</artifactId>
-      <version>4.0.19</version>
+      <version>4.0.24</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.groovy</groupId>
       <artifactId>groovy-json</artifactId>
-      <version>4.0.19</version>
+      <version>4.0.24</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -63,31 +63,31 @@
     <dependency>
       <groupId>org.apache.ant</groupId>
       <artifactId>ant</artifactId>
-      <version>1.10.14</version>
+      <version>1.10.15</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.ant</groupId>
       <artifactId>ant-launcher</artifactId>
-      <version>1.10.14</version>
+      <version>1.10.15</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>commons-cli</groupId>
       <artifactId>commons-cli</artifactId>
-      <version>1.5.0</version>
+      <version>1.9.0</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>info.picocli</groupId>
       <artifactId>picocli-groovy</artifactId>
-      <version>4.7.5</version>
+      <version>4.7.6</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>eu.rssw.pct</groupId>
       <artifactId>pct</artifactId>
-      <version>228</version>
+      <version>229</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -103,7 +103,7 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
-        <version>2.7.8</version>
+        <version>3.4.0</version>
         <configuration>
           <mainClass>groovy.ui.GroovyMain</mainClass>
         </configuration>
@@ -139,7 +139,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
-            <version>3.4.1</version>
+            <version>3.11.1</version>
             <executions>
               <execution>
                 <id>attach-javadocs</id>
@@ -172,7 +172,7 @@
           <plugin>
             <groupId>org.sonatype.plugins</groupId>
             <artifactId>nexus-staging-maven-plugin</artifactId>
-            <version>1.6.13</version>
+            <version>1.7.0</version>
             <extensions>true</extensions>
             <configuration>
               <serverId>ossrh</serverId>
