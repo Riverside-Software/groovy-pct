@@ -13,6 +13,9 @@ pipeline {
   stages {
     stage('Maven Central') {
       agent { label 'Linux-Office03' }
+      environment {
+        MAVEN_GPG_PASSPHRASE=credentials('GPG_KEY')
+      }
       steps {
         checkout([$class: 'GitSCM', branches: scm.branches, extensions: scm.extensions + [[$class: 'CleanCheckout']], userRemoteConfigs: scm.userRemoteConfigs])
         script {
