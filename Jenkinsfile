@@ -24,7 +24,7 @@ pipeline {
 
           withEnv(["JAVA_HOME=${jdk}"]) {
             sh "${mvn}/bin/mvn -P release clean package verify deploy -Dgit.commit=\$(git rev-parse --short HEAD)"
-            mail body: "---", to: "g.querret@riverside-software.fr", subject: "GroovyPCT - Publish artifact on Central"
+            mail body: "https://central.sonatype.com/publishing/deployments", to: "g.querret@riverside-software.fr", subject: "groovy-pct - Publish artifact on Central"
           }
         }
       }
