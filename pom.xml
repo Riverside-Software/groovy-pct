@@ -93,7 +93,7 @@
     <dependency>
       <groupId>com.progress.openedge</groupId>
       <artifactId>openedge</artifactId>
-      <version>12.8.2</version>
+      <version>12.8.9</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
